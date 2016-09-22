@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout22"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:overScrollMode="ifContentScrolls" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtSignature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:drawableLeft="@drawable/neg_signature"
+                android:text="  Signature"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edtSignaturePlace"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/txtSignature"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:background="@drawable/textinputborder"
+                android:hint="Place"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <ImageButton
+                android:id="@+id/imgCalendarsign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/edtSignaturePlace"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/calendar"
+                android:src="@drawable/calc" />
+
+            <EditText
+                android:id="@+id/edtSignatureDate"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/edtSignaturePlace"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/imgCalendarsign"
+                android:background="@drawable/textinputborder"
+                android:editable="false"
+                android:hint="Date"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/edtSignatureYourSincerely"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/edtSignatureDate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:background="@drawable/textinputborder"
+                android:hint="Your Sincerely"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/singatureRel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnSignatureSave"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/save"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnSignatureClear"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="101dp"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/clear"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

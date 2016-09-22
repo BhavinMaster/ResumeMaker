@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_converted" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/neg_achievement"
+            android:text="@string/title_activity_achievement_detail"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtAchievementNameOfAchievement"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtAchievement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="@string/nameofachievement"
+            android:capitalize="words"
+            android:inputType="textNoSuggestions|textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <ImageButton
+            android:id="@+id/imgCalendarachievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtAchievementNameOfAchievement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/calendar"
+            android:src="@drawable/calc" />
+
+        <EditText
+            android:id="@+id/edtAchievementYearOfAchievement"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtAchievementNameOfAchievement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgCalendarachievement"
+            android:background="@drawable/textinputborder"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="left|center_vertical"
+            android:hint="@string/yearofachievement"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtAchievementwhatYouHaveAchieved"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/edtAchievementYearOfAchievement"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/whatyouhaveachieved"
+            android:inputType="textMultiLine|textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnAchievementSave"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/edtAchievementwhatYouHaveAchieved"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</ScrollView>

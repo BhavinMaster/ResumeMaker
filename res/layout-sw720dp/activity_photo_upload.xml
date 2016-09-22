@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_converted"
+    android:gravity="center"
+    android:id="@+id/reltavi"
+    tools:context="rb.resumecareer.resume.PhotoUpload" >
+
+    <TextView
+        android:id="@+id/txtAddyourPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/txtAddyourPhoto"
+        android:textSize="56sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imgUploadPhoto"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/txtAddyourPhoto"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/txtAddyourPhoto"
+        android:src="@drawable/camera_img" />
+
+    <Button
+        android:id="@+id/btnNextImage"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_below="@id/imgUploadPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonstyle"
+        android:text="@string/btnCreateProfile" />
+    
+    
+
+</RelativeLayout>

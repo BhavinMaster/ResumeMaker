@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_converted" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/neg_reference"
+            android:text="@string/title_activity_reference_detail"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtReferenceName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtreference"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/referencename"
+            android:capitalize="words"
+            android:inputType="textNoSuggestions|textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtReferenceDetail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtReferenceName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:capitalize="words"
+            android:inputType="textNoSuggestions|textCapWords"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/referencedesignation"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtReferenceContact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtReferenceDetail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/referencecontact"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtReferenceEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtReferenceContact"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/referenceemail"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnSaveReference"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/edtReferenceEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</ScrollView>

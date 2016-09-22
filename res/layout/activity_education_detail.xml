@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_converted"
+    tools:context="rb.resumecareer.resumeDetail.EducationDetail" >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtdegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/neg_graduate"
+            android:gravity="center_horizontal"
+            android:text="@string/title_activity_education_detail"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtEducationdegree"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtdegree"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:capitalize="characters"
+            android:hint="@string/degree"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtEducationCollege"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtEducationdegree"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/college"
+            android:capitalize="words"
+            android:inputType="textNoSuggestions|textCapWords"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtEducationUniversity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtEducationCollege"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textinputborder"
+            android:capitalize="words"
+            android:hint="@string/university"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtEducationResult"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtEducationUniversity"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/result"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edtEducationUniversity"
+            android:layout_toRightOf="@id/edtEducationResult"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <RadioButton
+                android:id="@+id/radioPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_custom"
+                android:checked="true"
+                android:text="@string/percentage"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioCGPA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:button="@drawable/radio_custom"
+                android:text="@string/cgpa"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/imgCalendarEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/edtEducationResult"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/calendar"
+            android:src="@drawable/calc" />
+
+        <EditText
+            android:id="@+id/edtEducationYear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/edtEducationResult"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imgCalendarEducation"
+            android:background="@drawable/textinputborder"
+            android:editable="false"
+            android:hint="Select Year of Passing"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnEducationSave"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/edtEducationYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

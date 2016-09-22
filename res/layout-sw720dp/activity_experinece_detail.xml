@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_converted" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           android:drawableLeft="@drawable/neg_exp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="  Experience Details"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtExperienceCompany"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/experience"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Company"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtExperiencePosition"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/edtExperienceCompany"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Position"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+        
+        <ImageButton
+            android:id="@+id/imgCalendarexperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@id/edtExperiencePosition"
+            android:contentDescription="@string/calendar"
+            android:src="@drawable/calc" />
+
+        <EditText
+            android:id="@+id/edtExperiencePeriod"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/edtExperiencePosition"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:editable="false"
+            android:layout_toRightOf="@+id/imgCalendarexperience"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="Period"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtExperienceLocation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/edtExperiencePeriod"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/textinputborder"
+            android:ems="10"
+            android:hint="City"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnExperienceSave"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/edtExperienceLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</ScrollView>

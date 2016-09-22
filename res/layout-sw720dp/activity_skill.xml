@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="rb.resumecareer.resume.Skill" >
+
+    <Button
+        android:id="@+id/btnSkillAddMore"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:background="@drawable/buttonstyle"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="@string/addskill" />
+
+    <ListView
+        android:id="@+id/list_all_skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/btnSkillAddMore"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/customshape"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay" 
+        android:listSelector="#000000">
+    </ListView>
+
+</RelativeLayout>

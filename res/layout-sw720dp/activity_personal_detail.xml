@@ -1,0 +1,247 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="rb.resumecareer.resumeDetail.PersonalDetail" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/neg_personal"
+                android:gravity="center_horizontal"
+                android:text="@string/personaldetail"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel1" >
+
+            <EditText
+                android:id="@+id/edtPersonalName"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinputborder"
+                android:ems="10"
+                android:textSize="30dp"
+                android:hint="@string/name"
+                android:inputType="text|textNoSuggestions"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel2" >
+
+            <TextView
+                android:id="@+id/txtPersonalGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:text="@string/gender"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/txtPersonalGender"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_custom"
+                    android:textSize="30dp"
+                    android:checked="true"
+                    android:text="@string/male"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="30dp"
+                    android:button="@drawable/radio_custom"
+                    android:text="@string/female"
+                    android:textColor="#000000" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel3" >
+
+            <TextView
+                android:id="@+id/txtPersonalBdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/bdate"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imgCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/txtPersonalBdate"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/calendar"
+                android:src="@drawable/calc" />
+
+            <TextView
+                android:id="@+id/txtPersonalSetBdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/imgCalendar"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel4" >
+
+            <EditText
+                android:id="@+id/edtPersonalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinputborder"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="@string/address"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel5" >
+
+            <EditText
+                android:id="@+id/edtPersonallanguage"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinputborder"
+                android:hint="@string/language"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel6" >
+
+            <EditText
+                android:id="@+id/edtPersonalContact"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinputborder"
+                android:hint="@string/contact"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel7" >
+
+            <EditText
+                android:id="@+id/edtPersonalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+				android:textSize="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textinputborder"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel8" >
+
+            <Button
+                android:id="@+id/btnPersonalSave"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:background="@drawable/buttonstyle"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

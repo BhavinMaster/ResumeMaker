@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_converted"
+    tools:context="rb.resumecareer.resumeDetail.SkillDetail" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtSkill"
+            android:drawableLeft="@drawable/neg_skill"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/skill"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtSkill"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/txtSkill"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:background="@drawable/textinputborder"
+            android:hint="@string/enterskill"
+            android:inputType="text|textNoSuggestions"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnSkillSave"
+            android:layout_width="240dp"
+            android:textSize="30dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/edtSkill"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</ScrollView>

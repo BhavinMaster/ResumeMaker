@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="rb.resumecareer.resume.Achievement" >
+
+    <Button
+        android:id="@+id/btnAchievementAddMore"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonstyle"
+        android:gravity="center"
+        android:text="@string/addachievement"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/list_all_achievement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/btnAchievementAddMore"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/customshape"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="#000000"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+
+</RelativeLayout>

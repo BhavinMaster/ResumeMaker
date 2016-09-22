@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_converted" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/neg_project"
+                android:gravity="center"
+                android:text=" Project Details"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edtProjectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/project"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:background="@drawable/textinputborder"
+                android:ems="10"
+                android:hint="Project Title"
+                android:inputType="text|textNoSuggestions"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <ImageButton
+                android:id="@+id/imgCalendarproject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/edtProjectTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/calendar"
+                android:src="@drawable/calc" />
+
+            <EditText
+                android:id="@+id/edtProjectDuration"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/edtProjectTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="26dp"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/imgCalendarproject"
+                android:background="@drawable/textinputborder"
+                android:editable="false"
+                android:ems="10"
+                android:hint="Duration"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtProjectRole"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/edtProjectDuration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="26dp"
+                android:textSize="30dp"
+                android:background="@drawable/textinputborder"
+                android:ems="10"
+                android:hint="Role"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtProjectTeamSize"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/edtProjectRole"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/textinputborder"
+                android:ems="10"
+                android:hint="Team Size"
+                android:textSize="30dp"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/edtProjectExpertise"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/edtProjectTeamSize"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="26dp"
+                android:textSize="30dp"
+                android:background="@drawable/textinputborder"
+                android:gravity="top|left"
+                android:hint="Expertise"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <Button
+                android:id="@+id/btnProjectSave"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:textSize="30dp"
+                android:layout_below="@+id/edtProjectExpertise"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/save"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

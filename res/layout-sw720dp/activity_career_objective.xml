@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_converted"
+    tools:context="rb.resumecareer.resume.CareerObjective" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtCareerObjective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+           
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/neg_career"
+            android:text="@string/objective"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edtCareerObjective"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@id/txtCareerObjective"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="20dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/textinputborder"
+            android:gravity="top|left"
+            android:hint="@string/obj"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <EditText
+            android:id="@+id/edtCareerSummary"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@id/edtCareerObjective"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="100dp"
+            android:textSize="30dp"
+            android:background="@drawable/textinputborder"
+            android:gravity="top|left"
+            android:hint="@string/summary"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btnCareerSave"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:textSize="30dp"
+            android:layout_below="@id/edtCareerSummary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/imgtips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edtCareerObjective"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/edtCareerObjective"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/tips" />
+
+        <ImageButton
+            android:id="@+id/imgtipssum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edtCareerObjective"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/tips" />
+    </RelativeLayout>
+
+</ScrollView>
